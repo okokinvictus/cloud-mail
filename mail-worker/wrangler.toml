@@ -6,6 +6,19 @@ keep_vars = true
 [observability]
 enabled = true
 
+[[routes]]
+pattern = "mail.cemalvarhan.eu.org"
+custom_domain = true
+
+[[d1_databases]]
+binding = "db"
+database_name = "cloud-mail"
+database_id = "d336f970-23cb-43e3-b7c1-709fd0243a14"
+
+[[kv_namespaces]]
+binding = "kv"
+id = "a3a6c355b7b745d783dc0bbb5cd36c9a"
+
 #[[d1_databases]]
 #binding = "db"			#d1数据库绑定名默认不可修改
 #database_name = ""		#d1数据库名字
